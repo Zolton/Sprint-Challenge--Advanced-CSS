@@ -65,6 +65,7 @@
 
     .walk-text {
       width: 50%;
+
       @media screen and @phone {
         max-width: 500px;
         width: 100%;
@@ -81,11 +82,23 @@
 
       .btn {
         .button-styling (15px, darkblue, white, 2rem);
-        padding: 15px 20px;
+        padding: 5px 20px;
+
+        @media screen and @phone {
+          max-width: 500px;
+          width: 100%;
+          padding: 15px 20px;
+        }
 
         &:hover {
           .button-styling(15px, indigo, yellow, 2rem);
-          padding: 15px 20px;
+          padding: 5px 20px;
+
+          @media screen and @phone {
+            max-width: 500px;
+            width: 100%;
+            padding: 15px 20px;
+          }
         }
       }
     }
@@ -93,7 +106,7 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
       @media screen and @phone {
         max-width: 500px;
         width: 100%;
@@ -109,7 +122,6 @@
   }
 
   @media screen and @phone {
-
     .walk {
       .flex-column (space-around, center);
       max-width: 500px;
@@ -127,17 +139,7 @@
       order: -1;
     }
 
-    .btn {
-      max-width: 500px;
-      width: 100%;
-      .button-styling (25px, darkblue, white, 2rem);
-      padding: 15px 20px;
-
-      &:hover {
-        .button-styling(25px, indigo, yellow, 2rem);
-        padding: 15px 20px;
-      }
-    }
+  
   }
 }
 // home
