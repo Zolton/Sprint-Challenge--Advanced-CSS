@@ -5,12 +5,28 @@ header {
   background-color: whitesmoke;
   width: 100%;
   margin: 0 auto;
+
+  @media screen @phone {
+      max-width: 500px;
+  }
 }
 
 .logo {
   .flex-row (center, flex-end);
   .width();
   margin: 20px auto;
+
+  @media screen and @phone {
+    max-width: 500px;
+    width: 100%;
+    color: red;
+  }
+
+
+}
+
+.header-img {
+    .width();
 }
 
 .nav-header {
@@ -20,6 +36,10 @@ header {
   width: 100%;
   font-size: 1.6rem;
   line-height: 1.4;
+
+  @media screen and @phone {
+    max-width: 350px;
+}
 
   a {
     .link-styling();
