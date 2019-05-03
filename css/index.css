@@ -2,6 +2,10 @@
   max-width: 800px;
   width: 100%;
 }
+.link-styling {
+  text-decoration: none;
+  color: black;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -247,7 +251,11 @@ footer {
   margin-bottom: 26px;
 }
 .home .walk .walk-text .btn {
-  border-radius: 10px;
+  border-radius: 15px;
+  background-color: darkblue;
+  color: white;
+  font-size: 2rem;
+  padding: 5px 20px;
 }
 .home .walk .walk-img {
   width: 46%;
