@@ -1,1 +1,32 @@
 // Mixins Here
+
+.flex-row (@justify, @align) {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: @justify;
+  align-items: @align;
+}
+
+.flex-column (@justify, @align) {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: @justify;
+  align-items: @align;
+}
+
+.width {
+  max-width: 800px;
+  width: 100%;
+}
+
+.link-styling {
+  text-decoration: none;
+  color: black;
+}
+
+.button-styling (@rad, @bc, @color, @fs) {
+  border-radius: @rad;
+  background-color: @bc;
+  color: @color;
+  font-size: @fs;
+}
